@@ -52,7 +52,7 @@ export const authOptions: NextAuthOptions = {
     async session({ session, token }) {
       // Make the phone number available on the session object.
       if (session.user) {
-        session.user.phoneNumber = token.phoneNumber as string | null;
+        // session.user.phoneNumber = token.phoneNumber as string | null;
       }
       return session;
     },

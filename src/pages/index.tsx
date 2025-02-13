@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           {/* Note: The phone number is not provided by default by Google.
               You might need to extend your NextAuth callbacks or your user model
               to include a phone number if available. */}
-          {session.user?.phoneNumber && <p>Phone: {session.user.phoneNumber}</p>}
+          {/* {session.user?.phoneNumber && <p>Phone: {session.user.phoneNumber}</p>} */}
           <button onClick={() => signOut()}>Sign out</button>
         </>
       )}
