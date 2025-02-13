@@ -15,7 +15,7 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  secret: process.env.NEXT_PUBLIC_SECRET, 
+  secret: process.env.NEXT_PUBLIC_SECRET,
   callbacks: {
     async jwt({ token, account }) {
       // When the user signs in for the first time, account is available.
